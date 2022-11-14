@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Poppins:wght@200;400;600&display=swap');
+
+
+
+
+$primary-Red: hsl(0, 78%, 62%);
+$primary-Cyan: hsl(180, 62%, 55%);
+$primary-Orange: hsl(34, 97%, 64%);
+$primary-Blue: hsl(212, 86%, 64%);
+
+
+
+$neutral-Very-Dark-Blue: hsl(234, 12%, 34%);
+$neutral-Grayish-Blue: hsl(229, 6%, 66%);
+$neutral-Very-Light-Gray: hsl(0, 0%, 98%);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'karla';
+  }
+
+  body {
+    background-color: $neutral-Very-Light-Gray
+  }
+
+
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.4375rem;
+    &-h1 {
+      font-size: 1.875rem;
+      font-weight: 100;
+      margin-bottom: 10px;
+      color: grey;
+
+    }
+    &__heading {
+      font-size: 1.875rem;
+      margin-bottom: 20px;
+      margin-right: 27px;
+    }
+    &-p {
+      width: 500px;
+      text-align: center;
+      line-height: 1.5;
+      color: grey;
+      margin-bottom: 50px;
+  
+    }
+  }
+
+.card__wrapper {
+padding: 20px;
+}
+  .card {
+    // max-width:  350px;
+    // max-height: 250px ;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+  //  justify-content: space-between;
+   align-items: center;
+  //  padding: 0px 170px 0px 170px;
+ 
+
+    &__supervisor {
+      background-color: white;
+      width: 370px;
+      height: 230px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      padding: 35px;
+      border-top: 0.25rem solid turquoise;
+      border-radius: 5px;
+    }
+
+    &__supervisor-h3  {
+  
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &__supervisor-p {
+      font-size: 15px;
+      m-width: 250px;
+      line-height: 1.5;
+      color: $neutral-Grayish-Blue;
+      margin-bottom: 20px;
+    }
+    &__supervisor__image {
+      width: 50px;
+      height: 50px;
+     margin-left: 240px;
+    }
+    &__teambuilder {
+      background-color: white;
+      width: 370px;
+      height: 230px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      padding: 35px;
+      border-top: 0.25rem solid red;
+      border-radius: 5px;
+      margin-bottom: 40px;
+    }
+
+    &__teambuilder-h3  {
+  
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &__teambuilder-p {
+      font-size: 15px;
+      max-width: 250px;
+      line-height: 1.5;
+      color: $neutral-Grayish-Blue;
+      margin-bottom: 20px;
+    }
+    &__teambuilder__image {
+     margin-left: 240px;
+     width: 50px;
+     height: 50px;
+    }
+    &__karma {
+      background-color: white;
+      width: 370px;
+      height: 230px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      padding: 35px;
+      border-top: 0.25rem solid orange;
+      border-radius: 5px;
+    }
+
+    &__karma-h3  {
+  
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &__karma-p {
+      font-size: 15px;
+      width: 250px;
+      line-height: 1.5;
+      color: $neutral-Grayish-Blue;
+      margin-bottom: 20px;
+    }
+    &__karma__image {
+     margin-left: 240px;
+     width: 50px;
+     height: 50px;
+    }
+    &__calculator {
+      background-color: white;
+      width: 370px;
+      height: 250px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      padding: 35px;
+      border-top: 0.25rem solid blue;
+      border-radius: 5px;
+    }
+
+    &__calculator-h3  {
+  
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &__calculator-p {
+      font-size: 15px;
+      width: 230px;
+      line-height: 1.5;
+      color: $neutral-Grayish-Blue;
+      margin-bottom: 20px;
+    }
+    &__calculator__image {
+     margin-left: 240px;
+     width: 50px;
+     height: 50px;
+    }
+  }
+ 
+
+  @media (max-width: 1200px) {
+    .card {
+     
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+      &__calculator {
+        order:-1 ;
+      }
+
+      &__supervisor {
+        order: -1;
+      }
+      &__wrapper {
+        display: flex;
+        order: 2;
+      }
+      &__teambuilder {
+        order:2;
+      }
+      &__karma {
+        order:2;
+      }
+    }
+  }
